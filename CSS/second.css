@@ -1,0 +1,108 @@
+/*logo*/
+header{
+    display : block;
+    left : 50%;
+    width : 500px;
+    height : 140px;
+    margin-left :auto;
+    margin-right : auto;
+}
+
+
+/*button*/
+#add{
+    position : relative;
+    display : block;
+    right : 5%;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left: 30px;
+    padding-right : 30px;
+    background-color : rgba(255, 255, 255, 0.473);
+    color : #0b519b;
+    width :65px;
+    margin-left : 70px;
+    border-width : 0;
+    text-align : center;
+    font-size : 13.5px;
+
+}
+#add:hover{
+    background-color : #6d9d88;
+    color : white;
+
+}
+/*Contents*/
+.container{
+    display : flex;
+    flex-flow : row wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.item{
+    position: relative;
+    display : inline-block;
+    padding:5px;
+    margin : 5px;
+}
+.bookcover{
+    border: 1px;
+    width : 250px;
+    height : 350px;
+    object-fit : contain;
+    background:white;
+}
+
+.booktitle{
+    text-align : center;
+    font-weight : bold;
+    margin-top : 10px;
+    margin-bottom : 5px;
+}
+.bookinfo{
+    list-style:none;
+    padding : 0px;
+    text-align : center;
+    margin : 0px;
+
+}
+
+/*animation*/
+.discriptbox{
+    position: absolute;
+    top : 5px;
+    width : 252px;
+    height : 333px;
+    padding-top : 20px;
+    background : #ffffffe0;
+    opacity : 0;
+    transition : all 0.6s ease-in-out;
+    z-index: 10;
+    text-align : center;
+}
+.item:hover .discriptbox{
+    opacity: 1;
+    /*transform : translateY(-200px);*/
+}
+.tag{
+    background-color : #ee629f;
+    font-size : 10px;
+    color : white;
+    box-shadow: 3px solid;
+}
+.discription{
+    margin-top: 142px;
+    margin-bottom : 142px;
+    color : black;
+
+}
+
+/*footer*/
+footer{
+    width : 198px;
+    height : 22px;
+    left : 50%;
+    bottom : 5%;
+    margin-left : auto;
+    margin-right : auto;
+}

@@ -1,0 +1,86 @@
+/*logo*/
+header{
+    display : block;
+    left : 50%;
+    width : 500px;
+    height : 140px;
+    margin-left :auto;
+    margin-right : auto;
+}
+
+/*Contents*/
+fieldset{
+    width : 1000px;
+    border-style:dashed;
+    margin:20px auto;
+}
+legend{
+    font-weight : bold;
+}
+/*책 정보*/
+ul{
+    list-style : none;
+}
+#book-information label{
+    float : left;
+    font-size: 15px;
+    width : 110px;
+}
+input[type="text"], textarea, select{
+    border : 1px solid #ccc;
+    border-radius : 3px;
+    font-size : 15px;
+    padding : 5px;
+    width : 200px;
+    margin-bottom : 20px;
+}
+input[type="file"]{
+    margin-bottom : 20px;
+}
+textarea{
+    width : 500px;
+}
+input[required]{
+    border:1px #ee629f solid;
+}
+
+/*메뉴 선택*/
+#menu-selection div{
+    margin-bottom:20px;
+    margin-top : 20px;
+}
+#menu-selection input:checked + label{
+    color : #ee629f;
+    font-weight : bold;
+}
+
+/*버튼*/
+#buttons{
+    width : 220px;
+   display : inline-block;
+   margin-left:43%;
+}
+button{
+    margin : 10px;
+    padding : 15px;;
+    background-color : white;
+    border-width : 0px;
+    align-content: center;
+}
+button:hover{
+    background-color : #6d9d88;
+    color : white;
+}
+
+
+
+/*footer*/
+footer{
+    width : 198px;
+    height : 22px;
+    left : 50%;
+    bottom : 5%;
+    margin-left : auto;
+    margin-right : auto;
+}
+

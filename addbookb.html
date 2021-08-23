@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+    <link rel="stylesheet" href ="CSS\third.css">
+    <link rel="stylesheet" href = "CSS\Common.css">
+    <style>
+        
+        .information{
+            display: inline-block;
+            margin : 15px;
+        }
+        .container{
+            justify-content : center;
+            align-items : flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <div id ="logo">
+                <a href = "home.html"><h1>SeonAh's Bookshelf</h1></a>
+                <div>책장을 보면 그 사람이 보인다</div>
+            </div>
+            <ul id = "menu">
+                <li><a  href = "done.html">Done</a></li>
+                <li><a id = "present" href = "#">Wish</a></li>
+                <li><a href = "About.html">About</a></li>
+            </ul>
+        </header>
+        <hr>
+        <section>
+            <form>
+                <fieldset id="book-information">
+                    <legend>책 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="book-title">책 제목 : </label>
+                            <input type = "text" id = "book-title" size = 30 autofocus placeholder="책 제목을 입력하세요" autocomplete= "off" required>
+                        </li>
+                        <li>
+                            <label for="book-writer">저자명 : </label>
+                            <input type = "text" id = "book-writer" size = 30 placeholder="저자명을 입력하세요" autocomplete= "off" required>
+                        </li>
+                        <li>
+                            <label for="book-category">분류 (태그) : </label>
+                            <select>
+                                <option value="computer">분류 선택</option>
+                                <option value="computer">컴퓨터</option>
+                                <option value="computer">언어학</option>
+                                <option value="computer">심리학</option>
+                                <option value="computer">문학(소설/시/작가)</option>
+                                <option value="computer">교양</option>
+                                <option value="computer">기타</option>
+                            </select>
+                        </li>
+                        <li>
+                            <img class="bookcover" id = "preview-image" src="Image\grey.png" alt="이미지 추가", width="250px" height = "350">
+                            <label for="book-image">표지 사진 : </label>
+                            <input type = "file" id = "book-image" size = 30>
+                        </li>
+                        <li>
+                            <label for="memo">메모 : </label>
+                            <textarea id="memo" cols="40" rows="4"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="menu-selection">
+                    <legend>메뉴 선택</legend>
+                    <div>
+                        <input type="radio" id = "menu-done" name="menu">
+                        <label for = "menu-done">Done | 읽은 책</label>
+                        <input type="radio" id = "menu-wish" name="menu" checked>
+                        <label for = "menu-wish ">Wish | 읽고 싶은 책</label>
+                    <div></div>
+                </fieldset>
+                <div id="buttons">
+                    <button type = "submit" onclick = "announce()">저장하기</button>
+                    <button type="reset" onclick="recheck();">다시 쓰기</button> <!--주의창 뜨게 하면 좋을 듯-->
+                </div>
+            </form>
+         
+        </section>
+        <hr>
+        <footer>
+            <p>미래의 언어학자 프로젝트</p>
+
+        </footer>
+        
+    </div>
+</body>
+<script src="JavaScript\first.js"></script>
+</html>

@@ -1,0 +1,61 @@
+/* Basic settings*/
+
+body{
+    background-color : #f2f2f2;
+}
+a{
+    text-decoration-line:none;
+    color : black;
+}
+
+/*Logo*/
+#logo{
+    display : block;
+}
+#logo h1{
+    color : #ee629f;
+    -webkit-text-stroke-width: 0.2px;
+	-webkit-text-stroke-color: #e63481;
+    margin : 0px;
+    font-size : 50px;
+}
+#logo div{
+    letter-spacing:0.5em;
+    background-color : #6497ce;
+    color :white;
+    display : inline-block;
+    padding-left : 70px;
+    padding-right: 70px;
+}
+
+
+/*Menu*/
+#menu{
+    padding-left : 120px;
+    display :block;
+}
+#menu li{
+    display : inline;
+    padding : 15px;
+}
+#menu li a{
+    font-size : 20px;
+    font-weight :bold;
+}
+#menu li a:hover{
+    color : white;
+    background-color:#6d9d88;
+}
+#present {
+    color :white;
+    background-color: #ee629f;
+
+}
+
+/*Bottom*/
+footer p{
+    color :#0b519b;
+    font-weight : bold;
+    padding-left : 5px;
+    padding-right : 5px;
+}
