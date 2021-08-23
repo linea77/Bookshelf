@@ -4,7 +4,7 @@ function recheck(){
     if (reply == true){
         document.querySelector('form').reset()
         const previewImage = document.getElementById("preview-image");
-        previewImage.src="Image/grey.png";
+        previewImage.src="./docs/Image/grey.png";
     }
     else{
         return;
